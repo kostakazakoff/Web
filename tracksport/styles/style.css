@@ -16,7 +16,7 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    background-color: white;
+    background-color: #9DADBC;;
     color: #3A4856;
     font-size: 14px;
 }
@@ -56,7 +56,7 @@ button{
 
 
 
-/* ------------- HEADER ---------------- */
+/* HEADER ------------------------------------ */
 
 .header{
     width: 100%;
@@ -82,7 +82,6 @@ a{
     align-items: center;
     flex-wrap: nowrap;
     gap: 24px;
-    /* margin-left: 48px; */
     margin-right: auto;
 }
 .nav__item{
@@ -135,6 +134,9 @@ a{
     padding: 4px;
     border-radius: 50%;
 }
+
+/* SERVICES --------------------------------- */
+
 section{
     width: 100%;
     height: 100vh;
@@ -169,7 +171,7 @@ section{
     border-radius: 6px;
     box-shadow: -20px 10px 10px rgba(0,0,0,0.3);
     transition: all 300ms ease-in-out;
-    cursor: pointer;
+    cursor: default;
 }
 .card p{
     padding-top: 24px;
@@ -179,15 +181,18 @@ section{
     transform: rotate(0);   
 }
 
+/* COMPETITIONS --------------------------------- */
+
 #competitions{
     background-color: #9DADBC;
 }
-.competitions-carousel{
-    background-color: #394755;
-    margin-top: 48px;
+.items-container{
+    background-color: #9DADBC;
+    color: #394755;
+    margin-top: 32px;
     border-radius: 6px;
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 70%;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -199,14 +204,61 @@ section{
     border-right: 1px solid white;
     box-shadow: -20px 10px 10px rgba(0,0,0,0.3);
 }
-.competitions-carousel a{
-    color: #9DADBC;
+.items-container a{
+    color: #394755;
     padding: 6px 12px;
-    border: 1px solid #9DADBC;
+    border: 1px solid #394755;
     border-radius: 4px;
     transition: all 200ms ease-in-out;
 }
-.competitions-carousel a:hover{
+.items-container a:hover{
+    background-color: #394755;
+    border-color: #394755;
+    color: #E69C24;
+    padding: 8px 14px;
+}
+
+/* RESULTS --------------------------------- */
+
+.expand-container{
+    width: 80%;
+    height: 60px;
+    background-color: #394755;
+    color: #9DADBC;
+    margin-top: 32px;
+    border-radius: 6px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    box-shadow: -20px 10px 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+    /* display: flex; */
+    justify-content: flex-start;
+    align-content: flex-start;
+    transition: all 300ms linear;
+}
+.expand-container h3{
+    padding: 20px 0;
+    text-align: center;
+    background-color: #9DADBC;
+    color: #394755;
+}
+.expand-container p{
+    margin: 12px;
+    padding: 6px 12px;
+    line-height: 1.5;
+}
+.expand-container a{
+    padding: 6px 12px;
+    color: #9DADBC;
+    border: 1px solid #9DADBC;
+    border-radius: 4px;
+    
+}
+.expand-container:hover{
+    height: 40%;
+    overflow: scroll;
+}
+.expand-container a:hover{
     color: #E69C24;
     border-color: #E69C24;
     padding: 8px 14px;
