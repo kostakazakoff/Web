@@ -83,6 +83,7 @@ button{
     background-color: #333333;
     color: #E1E2E9;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-bottom: 1px solid #E69C24;
 }
 a{
     text-decoration: none;
@@ -164,6 +165,7 @@ section{
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     color: #E69C24;
+    /* border-bottom: 1px solid #E69C24; */
 }
 .section-subtitle{
     flex-basis: 100%;
