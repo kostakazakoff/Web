@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+
+<body>
+    <article class="card">
+        <div class="thumb">
+            <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=1380&t=st=1677622717~exp=1677623317~hmac=88896492984d945c77a3e10bd6d5863a80da7564d1ccf86056fac2497ae86c10" alt="image">
+        </div>
+        <div class="card__content">
+            <h2 class="counter" id="counter-text">0</h2>
+            <div class="btns-container">
+                <button class="primary-btn" id="count-btn" onclick="increment()">Count</button>
+                <button class="secondary-btn" id="save-btn" onclick="saveInfo()">Save</button>
+            </div>
+        </div>    
+    </article>
+    <article class="card">
+        <p class="info" id="saved-info"></p>
+    </article>
+    <script src="LearnJs.js"></script>
+</body>
+
+</html>
