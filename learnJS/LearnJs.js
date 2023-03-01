@@ -13,5 +13,5 @@ function saveInfo() {
     countArr.push(counter)
     counter = 0;
     countEl.textContent = counter;
-    infoEl.textContent = countArr.join(' ')
+    infoEl.value = countArr.join(' ')
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Count and Save</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     
@@ -24,8 +24,15 @@
             </div>
         </div>    
     </article>
-    <article class="card">
-        <p class="info" id="saved-info"></p>
+
+    <article class="card card-info">
+        <form action="" method="GET" class="card__content">
+            <input class="info" id="saved-info"></input>
+            <div class="btns-container">
+                <button class="primary-btn" id="submit">Submit</button>
+                <button class="secondary-btn" id="reset" onclick="resetInfo()">Reset</button>
+            </div>
+        </form>
     </article>
     <script src="LearnJs.js"></script>
 </body>
